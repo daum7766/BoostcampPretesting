@@ -22,7 +22,7 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
-import java.util.Vector;
+import java.util.LinkedList;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -32,12 +32,12 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerAdapter recyclerAdapter;
     LinearLayoutManager linearLayoutManager;
     String search = "";
-    public static Vector<MovieItems> movieItems;
+    public LinkedList<MovieItems> movieItems;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        movieItems = new Vector<MovieItems>();
+        movieItems = new LinkedList<MovieItems>();
 
 
         linearLayoutManager = new LinearLayoutManager(this);

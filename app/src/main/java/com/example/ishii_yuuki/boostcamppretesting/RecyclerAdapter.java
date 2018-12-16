@@ -12,12 +12,12 @@ import android.widget.RatingBar;
 import android.widget.TextView;
 
 
-import java.util.Vector;
+import java.util.LinkedList;
 
 public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ItemViewHolder>
 {
-    Vector<MovieItems> movieItems;
-    public RecyclerAdapter(Vector<MovieItems> movieItems){
+    LinkedList<MovieItems> movieItems;
+    public RecyclerAdapter(LinkedList<MovieItems> movieItems){
         this.movieItems = movieItems;
     }
 
